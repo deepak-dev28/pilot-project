@@ -13,7 +13,7 @@ const Dashboard: React.FC = () => {
         <div className="p-4 bg-white rounded shadow">Total Items: {items.length}</div>
         <div className="p-4 bg-white rounded shadow">
           Categories: {categories.length}
-        </div>
+         </div>
       </div>
     </div>
   );
