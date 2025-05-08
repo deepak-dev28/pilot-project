@@ -12,6 +12,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.7.0",
     "@sentry/react": "^9.15.0",
+    "@sentry/vite-plugin": "^3.4.0",
     "@tailwindcss/vite": "^4.1.5",
     "antd": "^5.24.9",
     "react": "^19.0.0",
