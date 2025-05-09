@@ -9,7 +9,6 @@ export default defineConfig({
     org: "simform-e4",
     project: "pilot-project"
   })],
-
   build: {
     sourcemap: true
   }
