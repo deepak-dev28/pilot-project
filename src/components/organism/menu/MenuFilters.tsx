@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, Select } from 'antd';
+import { Select } from 'antd';
 import InputAtom from '../../atoms/input';
 
 interface Props {
