@@ -51,7 +51,6 @@ const Sidebar: React.FC<SidebarProps> = ({ visible, onClose }) => {
         />
       </div>
 
-      {/* Mobile drawer */}
       <Drawer
         title="Admin Panel"
         placement="left"

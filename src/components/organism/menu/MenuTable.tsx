@@ -1,7 +1,8 @@
 import React from 'react';
-import { Table, Button, Space } from 'antd';
+import { Table, Space } from 'antd';
 import { EditOutlined, DeleteOutlined } from '@ant-design/icons';
 import { MenuItem } from '../../../redux/slices/menuSlice';
+import ButtonAtom from '../../atoms/button';
 
 interface Props {
   items: MenuItem[];
@@ -43,12 +44,12 @@ const MenuTable: React.FC<Props> = ({ items, onEdit, onDelete }) => {
       title: 'Actions',
       render: (_: any, item: MenuItem) => (
         <Space>
-          <Button
+          <ButtonAtom
             icon={<EditOutlined />}
             size="small"
             onClick={() => onEdit(item)}
           />
-          <Button
+          <ButtonAtom
             icon={<DeleteOutlined />}
             size="small"
             danger
