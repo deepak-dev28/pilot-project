@@ -7,8 +7,8 @@ import MenuFormModal from '../../components/organism/menu/MenuFormModal';
 import { RootState } from '../../redux/store';
 import { MenuItem } from '../../types/menu';
 import { addItem, deleteItem, updateItem } from '../../redux/slices/menuSlice';
-import { Button } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
+import ButtonAtom from '../../components/atoms/button';
 
 const MenuManagement: React.FC = () => {
   const menuItems = useSelector((s: RootState) => s.menu);
@@ -45,17 +45,16 @@ const MenuManagement: React.FC = () => {
   return (
     <div className="w-full px-4 sm:px-6 md:px-8 py-6">
       <div className="max-w-screen-2xl mx-auto">
-        {/* Top Section: Title + Filters */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
           <h1 className="text-xl sm:text-2xl font-bold text-center md:text-left">
             Menu Management
           </h1>
-          <Button type="primary" onClick={() => {
+          <ButtonAtom type="primary" onClick={() => {
                 setEditingItem(null);
                 setModalOpen(true);
               }}>
         <PlusOutlined /> Add Item
-      </Button>
+      </ButtonAtom>
         </div>
           <div className="w-full md:w-auto">
             <MenuFilters

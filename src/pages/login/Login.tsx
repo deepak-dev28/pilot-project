@@ -60,7 +60,7 @@ const Login = () => {
 
         <div className="flex items-center mb-6">
           <hr className="flex-grow border-gray-700" />
-          <span className="px-4 text-gray-500 text-sm">with username and password</span>
+          <span className="px-4 text-gray-500 text-sm">with username and password as admin</span>
           <hr className="flex-grow border-gray-700" />
         </div>
 

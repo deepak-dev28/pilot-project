@@ -3,6 +3,7 @@ import { Modal, Form, Input, InputNumber, Select, Upload, Button } from 'antd';
 import { UploadOutlined, CloseCircleOutlined } from '@ant-design/icons';
 import { RcFile } from 'antd/es/upload';
 import { MenuItem } from '../../../redux/slices/menuSlice';
+import InputAtom from '../../atoms/input';
 
 interface Props {
   open: boolean;
@@ -55,7 +56,7 @@ const MenuFormModal: React.FC<Props> = ({ open, onClose, onSubmit, initialValues
     >
       <Form form={form} layout="vertical" onFinish={handleFinish}>
         <Form.Item name="name" label="Name" rules={[{ required: true }]}>
-          <Input />
+          <InputAtom />
         </Form.Item>
         <Form.Item name="description" label="Description" rules={[{ required: true }]}>
           <Input.TextArea />
